@@ -5,32 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error 404 - Sin Conexión</title>
     <style>
-        /* Estilos para centrar el contenido */
+        /* Estilos para que la imagen ocupe toda la pantalla */
         body {
+            margin: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-            width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+            overflow: hidden; /* Evita que haya scroll */
         }
         img {
-            width: 100vw; /* Imagen se ajusta al ancho completo de la pantalla */
-            height: auto; /* Mantiene proporción */
-            display: block; /* Elimina márgenes o bordes extra */
+            width: 100vw; /* Ajusta la imagen al ancho completo de la pantalla */
+            height: 100vh; /* Ajusta la imagen a la altura completa de la pantalla */
+            object-fit: cover; /* Asegura que la imagen cubra toda la pantalla sin deformarse */
+            display: block;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="img/error404.png" alt="Error 404">
-    </div>
+    <img src="img/error404.png" alt="Error 404">
 
     <script>
         // Función checkConnection para verificar si hay conexión a Internet
@@ -47,3 +42,4 @@
 
 </body>
 </html>
+
