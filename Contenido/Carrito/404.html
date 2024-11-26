@@ -6,7 +6,7 @@
     <title>Error 404 - Sin Conexión</title>
     <style>
         /* Estilos para centrar el contenido */
-body {
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,15 +20,16 @@ body {
             width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
         }
         img {
-            width: 100%; /* Imagen se ajusta al ancho completo */
+            width: 100vw; /* Imagen se ajusta al ancho completo de la pantalla */
             height: auto; /* Mantiene proporción */
+            display: block; /* Elimina márgenes o bordes extra */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="img/error404.png" alt="Error 404" style="max-width: 50%; height: auto;">
+        <img src="img/error404.png" alt="Error 404">
     </div>
 
     <script>
@@ -46,3 +47,4 @@ body {
 
 </body>
 </html>
+
